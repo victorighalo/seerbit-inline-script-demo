@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeerBit inline-script demo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="center-wrapper">
+    <div class="content">
+    <nav>
+      <a href="#" class="menu">Menu</a>
+      <h1 class="logo">demo Shop</h1>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-shopping-bag"></i><span style="margin-left: 0.3rem;" id="cart_total_items"></span>
+      </div>
+    </nav>
+    <div class="top-bar">
+      <i class="fas fa-arrow-left"></i>
+      <span>Continue shopping</span>
+    </div>
+    <div class="bag">
+      <p class="bag-head"><span style="text-transform: uppercase">Your Bag</span> - <span class="cart_total"></span> item</p>
+    </div>
+    <div class="product-list">
+
+    </div>
+    <div class="bag-total">
+      <div class="subtotal">
+        <p class="small">Subtotal:</p>
+        <p class="small">N<span class="cart_total"></span></p>
+      </div>
+      <div class="delivery">
+        <p class="small">Delivery (Standard - 2 working days):</p>
+        <p class="small">Free</p>
+      </div>
+      <div class="total">
+        <h3>Total:</h3>
+        <h3>N<span class="cart_total"></span></h3>
+      </div>
+      <button class="btn-go-checkout" onclick="paywithSeerbit()">
+        <i class="fas fa-lock"></i>
+        <span>Checkout</span>
+      </button>
+      
+    
+    </div>
+  
+  </div>
+  </div>
+<script src="https://checkout.seerbitapi.com/api/v1/seerbit.js"></script>
+<script src="./script/index.js"></script>
+
+</body>
+</html>

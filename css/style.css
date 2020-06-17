@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .center-wrapper {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+  }
+  
+  .content {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 500px;
+    border: 1px solid lemonchiffon;
+    background: white;
+  }
+  
+  nav,
+  .top-bar,
+  .bag,
+  .bag-total,
+  .help {
+    padding: 0.5rem 1rem;
+  }
+  
+  nav,
+  a,
+  .btn-go-checkout {
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #03375E;
+  }
+  
+  a {
+    padding: 0.2rem 0.5rem;
+    border: 2px solid white;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-family: "Space Mono", sans-serif;
+  }
+  
+  .logo,
+  button {
+    text-transform: uppercase;
+  }
+  
+  .top-bar,
+  .bag-head::after,
+  .bag-total::before {
+    background: whitesmoke;
+  }
+  
+  .bag-head::after,
+  .bag-total::before,
+  .btn-remove {
+    display: block;
+  }
+  
+  .bag-head::after,
+  .bag-total::before,
+  .description-text{
+    margin: 0.5rem 0;
+  }
+  
+  .bag-head::after,
+  .bag-total::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+  }
+  
+  .muted {
+    color: grey;
+  }
+  
+  h1 {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: .8rem;
+  }
+  
+  .image {
+    width: 40%;
+  }
+  .image img.product-image {
+    max-width: 100%;
+  }
+  
+  .description {
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  select {
+    padding: 0.3rem;
+    width: 80px;
+  }
+  
+  select,
+  button,
+  input[type="text"] {
+    height: 20px;
+  }
+  
+  button {
+    cursor: pointer;
+    width: 100px;
+    background: none;
+    border: 2px solid #0D6CB4;
+  }
+  
+  .quantity-wrapper {
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  select {
+    width: 50px;
+    margin-right: 1rem;
+  }
+  
+  .bag-product,
+  .quantity-wrapper,
+  .subtotal,
+  .delivery,
+  .total {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .subtotal,
+  .delivery,
+  input[type="checkbox"],
+  .help {
+    margin-bottom: 0.5rem;
+  }
+  
+  .total {
+    margin-bottom: 1rem;
+  }
+  
+  
+  input[type="text"],
+  .btn-go-checkout {
+    font-size: 1rem;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 100px - 1rem);
+    padding: 0.5rem;
+  }
+  
+  .btn-go-checkout {
+    margin-top: 1rem;
+    width: 100%;
+    height: 40px;
+    background: #0D6CB4;
+    box-shadow: 0 3px 6px 2px gainsboro;
+  }
