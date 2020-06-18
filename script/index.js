@@ -10,19 +10,19 @@ var demoApp = {
         {
             id: 11,
             name: 'Product 1',
-            price: 4000,
+            price: 50,
             description: 'A description of product 1',
             qty: 1
         }, {
             id: 12,
             name: 'Product 2',
-            price: 8000,
+            price: 50,
             description: 'A description of product 2',
             qty: 1
         }, {
             id: 13,
             name: 'Product 3',
-            price: 8000,
+            price: 50,
             description: 'A description of product 3',
             qty: 1
         },
@@ -116,9 +116,9 @@ demoApp.loadProductsList();
 function paywithSeerbit() {
     SeerbitPay({
         "tranref": new Date().getTime(),
-        "currency": "NGN",
+        "currency": "GHS",
         "description": "TEST",
-        "country": "NG",
+        "country": "GH",
         "amount": demoApp.cart_total_cost,
         "callbackurl": "http://yourdomain.com",
         "public_key": "SBTESTPUBK_p8GqvFSFNCBahSJinczKd9aIPoRUZfda", // replace this with your own public key
